@@ -18,7 +18,7 @@ const SingleProperty = () => {
          Sethouse(response.data.property);
         })
         .catch((error) => {
-         console.log(error)
+         console.log(error,"Property now error")
         });
       },[])
      

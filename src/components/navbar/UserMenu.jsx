@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { useContext } from 'react';
 import {AiOutlineMenu} from 'react-icons/ai'
 import Avatar from '../Avatar'
-import { UserContext } from '../../Usercontext';
+import { UserContext } from '../../Context/Usercontext';
 import { Link } from 'react-router-dom';
 
 const UserMenu = () => {
@@ -49,7 +49,7 @@ const UserMenu = () => {
               Signup
             </div>
           </Link>
-          <Link to="/signup">
+          <Link to="/airbnbyourhome">
             <div className='py-3 px-4 hover:bg-neutral-100 transition font-semibold'>
               Airbnb your home
             </div>
@@ -64,7 +64,7 @@ const UserMenu = () => {
                   Logout
                 </div>
               </button>
-              <Link to="/signup">
+              <Link to="/airbnbyourhome">
                 <div className='py-3 px-4 hover:bg-neutral-100 transition font-semibold'>
                   Airbnb your home
                 </div>

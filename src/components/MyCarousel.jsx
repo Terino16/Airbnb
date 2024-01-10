@@ -9,6 +9,7 @@ const MyCarousel = ({ item }) => {
       showStatus={false}
       showThumbs={false}
       infiniteLoop={true}
+      dynamicHeight={true}
     >
       {item.imageUrls.map((imageUrl, imgIndex) => (
         <div key={imgIndex}>

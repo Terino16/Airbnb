@@ -1,5 +1,5 @@
 
-import SignInBtn from "./SigninBtn";
+
 import { useSession } from "next-auth/react";
 
 export default function UserInfo() {
@@ -24,6 +24,6 @@ export default function UserInfo() {
       </div>
     );
   } else {
-    return <SignInBtn />;
+    return (<h1>Hi</h1>);
   }
 }

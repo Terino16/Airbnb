@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useContext } from "react";
-import { UserContext } from "../Usercontext";
+import { UserContext } from "../Context/Usercontext";
 import axios from "axios";
 import MyCarousel from "../components/MyCarousel";
 import { Link } from "react-router-dom";
 const Home = () => {
   const [homes, Sethomes] = useState([]);
-
   const { user,setuser } = useContext(UserContext);
-  console.log(user);
+  console.log(user,"Hi");
   useEffect(() => {
      const token=localStorage.getItem("token");
      if(token)
@@ -43,6 +42,7 @@ const Home = () => {
           </p>
         </Link>
       ))}
+      
     </div>
   );
 };
